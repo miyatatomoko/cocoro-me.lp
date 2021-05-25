@@ -1,0 +1,11 @@
+.footer {
+  background-color: cl(primary);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .copy-right {
+    text-align: center;
+    p {
+      color: cl(white);
+    }
+  }
+}

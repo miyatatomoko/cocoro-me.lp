@@ -1,0 +1,74 @@
+.works {
+  margin-top: 135px;
+  padding-right: 20px;
+  padding-left: 20px;
+  @include overTab {
+    padding-right: percentage(360/1920);
+    padding-left: percentage(360/1920);
+  }
+  .inner {
+  }
+  .works-cont {
+    margin-top: 60px;
+    @include overTab {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .portfolio_link {
+    &:nth-child(n + 2) {
+      margin-left: 60px;
+    }
+  }
+  .portfolio {
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+    &:hover .caption {
+      visibility: visible;
+    }
+    &:hover p {
+      opacity: 1; /* 文字を表示する */
+    }
+    &:hover .mask1 {
+      left: 0;
+    }
+    &:hover .mask2 {
+      right: 0;
+    }
+  }
+  .mask1,
+  .mask2 {
+    width: 50%; /* 幅は半部のサイズ */
+    height: 97.7%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .mask1 {
+    left: -50%; /* 枠の左に置いて表示させない */
+  }
+  .mask2 {
+    right: -50%; /* 枠の右に置いて表示させない */
+  }
+  .caption {
+    width: 100%;
+    height: 100%;
+    visibility: hidden; /* 文字を表示しない */
+    font-size: 16px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    text-align: center;
+    -webkit-transition: all 0.4s step-end;
+    transition: all 0.4s step-end;
+    p {
+      color: cl(white);
+      opacity: 0; /* ホバーが解除された時すぐ消えるように、文字を表示しない */
+    }
+  }
+}

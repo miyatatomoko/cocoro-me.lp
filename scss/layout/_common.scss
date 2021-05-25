@@ -1,0 +1,84 @@
+.cmn-title-box {
+  display: flex;
+  justify-content: center;
+}
+
+.cmn-title {
+  position: relative;
+  padding-top: 50px;
+  padding-left: 30px;
+  font-size: 23px;
+  @include overTab {
+    font-size: 26px;
+  }
+  span {
+    position: relative;
+    z-index: 2;
+  }
+  &::before {
+    content: attr(data-en);
+    position: absolute;
+    transform: rotate(-7deg);
+    top: -10px;
+    left: 0;
+    color: rgba(245, 176, 155, 0.6);
+    font-size: 70px;
+    font-weight: 400;
+    font-family: Luxus Brut, cursive;
+    font-style: italic;
+    @include overTab {
+      font-size: 80px;
+      top: -20px;
+    }
+  }
+}
+
+.cmn-link {
+  a {
+    background-color: cl(pink);
+    border: 1px solid cl(pink);
+    border-radius: 35px;
+    position: relative;
+    padding: 18px 26px;
+    font-size: 14px;
+
+    @include overTab {
+      padding: 20px 50px;
+      font-size: 16px;
+    }
+    &:hover {
+      background-color: #ffa185;
+      border: 1px solid #333;
+      color: cl(white);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 5px);
+      right: -15px;
+      transform: rotate(30deg);
+      width: 10px;
+      height: 1px;
+      background-color: #333;
+      position: absolute;
+      @include overTab {
+        width: 12px;
+        right: -30px;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -15px;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 1px;
+      background-color: #333;
+      @include overTab {
+        width: 70px;
+        right: -30px;
+      }
+    }
+  }
+}

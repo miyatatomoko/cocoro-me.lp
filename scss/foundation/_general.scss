@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+}
+
+.wrap {
+  overflow: hidden;
+}
+body {
+  line-height: 1.5;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "Noto Sans JP", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+  color: cl(text);
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
