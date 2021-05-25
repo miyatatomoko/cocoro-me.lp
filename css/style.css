@@ -388,7 +388,7 @@ img {
 }
 
 .top {
-  background-image: url(https://miyatatomoko.github.io/cocoro-me.lp/image/top-bg-sp.jpg);
+  background-image: url(https://tomokomotoko.github.io/cocoro-me.lp/image/top-bg-sp.jpg);
   background-size: cover;
   background-position: center;
   height: 800px;
@@ -396,7 +396,7 @@ img {
 
 @media print, screen and (min-width: 768px) {
   .top {
-    background-image: url(https://miyatatomoko.github.io/cocoro-me.lp/image/top-bg-pc.jpg);
+    background-image: url(https://tomokomotoko.github.io/cocoro-me.lp/image/top-bg-pc.jpg);
     background-size: cover;
     background-position: center;
     height: 1000px;
@@ -489,7 +489,7 @@ img {
 .item-desc::before {
   content: "";
   display: inline-block;
-  background-image: url(https://miyatatomoko.github.io/cocoro-me.lp/image/top-item.png);
+  background-image: url(https://tomokomotoko.github.io/cocoro-me.lp/image/top-item.png);
   background-size: cover;
   width: 100%;
   position: absolute;
